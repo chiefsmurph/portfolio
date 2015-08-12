@@ -1,0 +1,184 @@
+html {
+  background: black;
+}
+body {
+
+  /*  background: black url('../images/mchammer.gif') repeat-x bottom; */
+}
+#cardDouble {
+}
+
+#card {
+  background: rgba(230,148,0,0.8) url('../images/pic.jpg') no-repeat top left;
+  color: black;
+  width: 360px;
+  padding: 280px 20px 10px;
+  border: 2px solid #E69400;
+  margin-left: auto ;
+  margin-right: auto ;
+  position: relative;
+  top: 100px;
+  z-index: 10001;
+  font-family: sans-serif;
+
+  border-radius: 0 0 14px 14px;
+  box-shadow: 0 0 1pt 2pt #FF9933;
+
+  -moz-animation-name: slideIn;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 8.3s;
+
+  -webkit-animation-name: slideIn;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 8.3s;
+
+  animation-name: slideIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 8.3s;
+}
+
+
+@-moz-keyframes slideIn {
+    0% {
+        -moz-transform: translateY(-600px);
+    }
+    100% {
+        -moz-transform: translateY(0);
+    }
+}
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: translateY(-600px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes slideIn {
+    0% {
+        transform: translateY(-600px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#card #links {
+
+  margin: -6px -20px 0 0;
+  text-align: right;
+}
+#card a:link, #card a:visited {
+  color: #00FFFF;
+  font-size: 17px;
+  margin: 0 15px;
+  font-variant: small-caps;
+  text-decoration: none;
+  z-index: 10003;
+}
+#card a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+#card h1 {
+  color: #7A0029;
+  font-size: 6em;
+  font-family: 'Lobster';
+}
+#card h2 {
+  font-family: 'PT Sans';
+  position: relative;
+  font-size: 5px;
+  margin: -10px 0 9px 32px;
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-shadow: -2px 0 1px rgb(130,242,241) , 1px 0 1px rgb(146,65,10) ;
+  opacity: 0;
+
+
+}
+#examples {
+  display: none;
+  list-style-type: none;
+  margin-top: 4px;
+}
+#examples li {
+  border-top: 1px dashed black;
+  text-align: right;
+}
+#examples li a:link, #examples li a:visited {
+  color: #D6D633;
+}
+#examples li a:hover {
+  color: orange;
+}
+#links img {
+  margin-right: 6px;
+}
+
+iframe {
+  display: none;
+}
+
+#loading {
+  width: 300px;
+  background-color: rgba(255, 255, 235, 0.8);
+  padding: 15px;
+  margin-left: auto ;
+  margin-right: auto ;
+  color: black;
+  top: 150px;
+  font-size: 18px;
+  text-variant: smallcaps;
+  position: relative;
+  z-index: 201;
+  font-family: fantasy;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+#loading:hover {
+  background-color: rgba(255, 250, 205, 0.9);
+  cursor: pointer;
+}
+
+#bigbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url('') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: none;
+}
+#bigbsg {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../images/cakewalk.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.5;
+    z-index: -1;
+
+}
+
+span {
+  line-height: 90%;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
